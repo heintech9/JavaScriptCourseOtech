@@ -3,9 +3,9 @@
 // console.log(innerWidth);
 
 // Global scope variable
-const x = 100;
+// const x = 100;
 
-console.log(x, 'in global');
+// console.log(x, 'in global');
 
 function run() {
   // Access global vars in functions
@@ -17,7 +17,7 @@ run();
 
 // Access global vars in blocks
 if (true) {
-  console.log(x, 'in block');
+  // console.log(x, 'in block');
 }
 
 function add() {
@@ -28,7 +28,7 @@ function add() {
 }
 
 // Can not access a function scoped variable in global scope
-console.log(y);
+// console.log(y);
 
 add();
 
@@ -69,6 +69,33 @@ run();
 
 // console.log(d);
 
-
 const foo = 1;
 var bar = 2; // Put on the window object
+
+console.log('first')
+
+function first() {
+  const x = 100;
+
+  function second() {
+    const y = 200;
+    // console.log(x + y);
+  }
+
+  console.log(y);
+
+  second();
+}
+
+first();
+
+// if (true) {
+//   const x = 100;
+
+//   if (x === 100) {
+//     const y = 200;
+//     console.log(x + y);
+//   }
+
+//   console.log(y);
+// }

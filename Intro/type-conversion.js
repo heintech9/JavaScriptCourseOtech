@@ -6,7 +6,7 @@ console.log(amount, typeof amount)
 amount = parseInt(amount);
 // console.log(amount, typeof amount)
 amount = +amount;
-console.log(amount, typeof amount)
+// console.log(amount, typeof amount)
 amount = Number(amount);
 // console.log(amount, typeof amount)
 
@@ -25,5 +25,3 @@ console.log(Math.sqrt(-1));
 console.log(1 + NaN);
 console.log(undefined + undefined);
 console.log('foo' / 3);
-
-console.log(amount, typeof amount);

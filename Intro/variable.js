@@ -23,6 +23,8 @@ console.log(age);
 
 // With let, we can declare a value without assigning a value
 let score;
+
+
 score = 1;
 console.log(score);
 

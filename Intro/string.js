@@ -17,12 +17,14 @@ const s = new String('Hello World');
 x = typeof s;
 
 x = s.length;
-
+console.log(x)
 // Access value by key
 x = s[0];
 
 // Shows the prototype of the string object. Shows the properties and methods
 x = s.__proto__;
+
+console.log(x)
 
 // Change case
 x = s.toUpperCase();
@@ -36,11 +38,13 @@ x = s.indexOf('d');
 
 // substring() - search a string for a specified value
 x = s.substring(2, 5);
+// console.log('Test',x)
 x = s.substring(7);
+// console.log(x)
 
 // slice() - extracts a part of a string and returns a new string
 x = s.slice(-11, -6);
-
+console.log('test', x)
 // trim() - remove whitespace from beginning and end of string
 x = '         Hello World';
 x = x.trim();
@@ -52,7 +56,9 @@ x = s.replace('World', 'John');
 x = s.includes('Hell');
 
 // valueOf() - returns the primitive value of a variable
+console.log('S Type', typeof s)
 x = s.valueOf();
+console.log('X Type', typeof x)
 
 console.log(x, typeof x)
 

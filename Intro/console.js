@@ -11,7 +11,7 @@ console.log(x);
 console.error('Alert');
 console.warn('Warning');
 // Log object as table
-console.table({ name: 'Otechnique', email: 'o-technique-myanmar@gmail.com' });
+// console.table({ name: 'Otechnique', email: 'o-technique-myanmar@gmail.com' });
 // Group console commands
 console.group('Hello');
 console.log(x);

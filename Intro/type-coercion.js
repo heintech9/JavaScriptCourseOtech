@@ -9,17 +9,21 @@ let x;
 // Coerced to a string
 x = 5 + '5';
 
-console.log(x)
+console.log(x, typeof x)
 
 x = 5 + Number('5');
 
 // Coerced to a number
 x = 5 * '5';
 
+console.log(x)
+
 // null is coerced to 0 as it is a `falsy` value
 x = 5 + null;
 
 x = Number(null);
+
+console.log('test', null, typeof x)
 
 x = Number(true);
 x = Number(false);
