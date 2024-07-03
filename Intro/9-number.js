@@ -11,14 +11,13 @@ x = num.toString().length;
 x = num.toFixed(2);
 console.log(x)
 // toPrecision() - returns a number with the specified length
-x = num.toPrecision(5);
-console.log(x)
+x = num.toPrecision(3);
+// console.log('test', x)
 
 // toExponential() -  convert a number to exponential notation and return its value as a string
 x = num.toExponential(2);
 
-// toLocaleString() - returns a string representation of the number, using the current locale
-x = num.toLocaleString('en-US');
+console.log(x)
 
 // valueOf - Get value
 x = num.valueOf();

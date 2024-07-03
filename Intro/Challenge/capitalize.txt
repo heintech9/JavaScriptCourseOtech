@@ -12,8 +12,6 @@ console.log(myNewString); // 'Developer'
 2. The `.toUpperCase()` method will make the entire string uppercase
 3. `substring()` or `slice()` will return a specific portion of a string
 
-
-
 // Solution 1
 const myNewString = myString.charAt(0).toUpperCase() + myString.substring(1);
 

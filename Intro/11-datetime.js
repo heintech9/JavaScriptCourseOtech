@@ -2,6 +2,7 @@ let d;
 
 // Get today's date and time
 d = new Date();
+// console.log(d)
 
 // Set to a string
 d = d.toString();
@@ -16,8 +17,16 @@ d = new Date('07/10/2021 12:30:00');
 d = new Date('2022-07-10');
 d = new Date('07-10-2022');
 
+
+// 1970/1/1
 // Get current timestamp
 d = Date.now();
+// let sec = d / 1000;
+// let min = sec / 60;
+// let hr = min / 60;
+// let days = hr / 24;
+
+// console.log(days)
 
 // Get the timestamp of a specific date
 d = new Date();
@@ -30,11 +39,11 @@ d = new Date(1666962049745);
 // Convert from milliseconds to seconds
 d = Math.floor(Date.now() / 1000);
 
-console.log(d);
+// console.log(d);
 
-let x;
+// let x;
 
-let d = new Date();
+// let d = new Date();
 
 // Date methods
 
@@ -46,6 +55,7 @@ x = d.valueOf();
 x = d.getFullYear();
 
 x = d.getMonth();
+
 x = d.getMonth() + 1;
 
 x = d.getDate();
@@ -61,25 +71,3 @@ x = d.getSeconds();
 x = d.getMilliseconds();
 
 x = `${d.getFullYear()}-${d.getMonth() + 1}-${d.getDate()}`;
-
-// Intl.DateTimeFormat API (locale specific)
-x = Intl.DateTimeFormat('en-US').format(d);
-x = Intl.DateTimeFormat('en-GB').format(d);
-x = Intl.DateTimeFormat('default').format(d);
-
-x = Intl.DateTimeFormat('default', { month: 'long' }).format(d);
-
-x = d.toLocaleString('default', { month: 'short' });
-
-x = d.toLocaleString('default', {
-  weekday: 'long',
-  year: 'numeric',
-  month: 'long',
-  day: 'numeric',
-  hour: 'numeric',
-  minute: 'numeric',
-  second: 'numeric',
-  timeZone: 'America/New_York',
-});
-
-console.log(x);
