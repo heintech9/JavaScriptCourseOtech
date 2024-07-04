@@ -2,142 +2,195 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Journey to React</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f5f5f5;
-      color: #333;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Journey</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
 
-    header {
-      background-color: #4CAF50;
-      color: white;
-      padding: 10px 20px;
-      text-align: center;
-    }
+        h1 {
+            text-decoration: underline;
+        }
 
-    main {
-      padding: 20px;
-    }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
 
-    section {
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      margin-bottom: 20px;
-      padding: 20px;
-    }
+        .text-center {
+            text-align: center;
+        }
 
-    h2 {
-      color: #4CAF50;
-    }
+        .roles {
+            margin-left: 20px;
+        }
 
-    ul {
-      list-style-type: none;
-      padding-left: 0;
-    }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
 
-    li {
-      background: #e8f5e9;
-      margin: 5px 0;
-      padding: 10px;
-      border-radius: 4px;
-    }
-  </style>
+        th,
+        td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
 </head>
 
 <body>
-  <header>
-    <h1>Journey to React</h1>
-  </header>
-  <main>
-    <section>
-      <h2>Core JavaScript Skills</h2>
-      <ul>
-        <li><strong>Variables and Data Types</strong></li>
-        <ul>
-          <li>Understanding <code>let</code>, <code>const</code>, and <code>var</code></li>
-          <li>Familiarity with primitive and complex data types</li>
-        </ul>
-        <li><strong>Functions</strong></li>
-        <ul>
-          <li>Declaration and expression syntax</li>
-          <li>Arrow functions</li>
-          <li>Higher-order functions and callbacks</li>
-        </ul>
-        <li><strong>Control Structures</strong></li>
-        <ul>
-          <li>Conditional statements (<code>if</code>, <code>else</code>, <code>switch</code>)</li>
-          <li>Loops (<code>for</code>, <code>while</code>, <code>forEach</code>)</li>
-        </ul>
-        <li><strong>ES6+ Features</strong></li>
-        <ul>
-          <li>Destructuring assignment</li>
-          <li>Spread and rest operators</li>
-          <li>Template literals</li>
-          <li>Default parameters</li>
-          <li>Modules (<code>import</code> and <code>export</code>)</li>
-        </ul>
-        <li><strong>Objects and Arrays</strong></li>
-        <ul>
-          <li>Creating, manipulating, and iterating over objects and arrays</li>
-          <li>Array methods like <code>map</code>, <code>filter</code>, <code>reduce</code>, etc.</li>
-        </ul>
-        <li><strong>DOM Manipulation</strong></li>
-        <ul>
-          <li>Basic understanding of how to select and manipulate DOM elements</li>
-          <li>Event handling</li>
-        </ul>
-      </ul>
-    </section>
-    <section>
-      <h2>Advanced JavaScript Concepts</h2>
-      <ul>
-        <li><strong>Asynchronous JavaScript</strong></li>
-        <ul>
-          <li>Promises and <code>async/await</code></li>
-          <li>Fetch API and AJAX</li>
-        </ul>
-        <li><strong>Closures and Scope</strong></li>
-        <ul>
-          <li>Understanding lexical scope and closures</li>
-          <li>Context (<code>this</code> keyword)</li>
-        </ul>
-        <li><strong>Error Handling</strong></li>
-        <ul>
-          <li>Try/Catch</li>
-          <li>Custom errors</li>
-        </ul>
-      </ul>
-    </section>
-    <section>
-      <h2>Tooling and Ecosystem</h2>
-      <ul>
-        <li><strong>Package Managers</strong></li>
-        <ul>
-          <li>npm and yarn: installing and managing dependencies</li>
-        </ul>
-        <li><strong>Module Bundlers</strong></li>
-        <ul>
-          <li>Basic understanding of Webpack, Parcel, or similar tools</li>
-        </ul>
-        <li><strong>Version Control</strong></li>
-        <ul>
-          <li>Git basics: cloning, committing, pushing, and pulling</li>
-        </ul>
-        <li><strong>Development Environment</strong></li>
-        <ul>
-          <li>Setting up a code editor (like VSCode) with essential extensions</li>
-          <li>Using linters (ESLint) and formatters (Prettier)</li>
-        </ul>
-      </ul>
-    </section>
-  </main>
+    <div class="container">
+        <div class="head">
+            <h1 class="text-center">Welcome from JavaScript ES6.</h1>
+            <h3>Understanding Their Roles in Building Web Pages.</h3>
+            <div class="roles">
+                <p><strong>HTML</strong>: Noun (Defines the structure and content of the webpage)</p>
+                <p><strong>CSS</strong>: Adjective (Describes the appearance and style of the HTML elements)</p>
+                <p><strong>JavaScript</strong>: Verb (Adds behavior and interactivity to the webpage)</p>
+            </div>
+        </div>
+        <div class="ecmascript">
+            <h3>ES5 vs ES6</h3>
+            <p>Comparison of ES5 and ES6 Features.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>ES5</th>
+                        <th>ES6</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Variable Declarations</td>
+                        <td>var</td>
+                        <td>let, const</td>
+                    </tr>
+                    <tr>
+                        <td>Functions</td>
+                        <td>Regular functions</td>
+                        <td>Arrow functions</td>
+                    </tr>
+                    <tr>
+                        <td>Classes</td>
+                        <td>Constructor functions and prototypes</td>
+                        <td>class syntax</td>
+                    </tr>
+                    <tr>
+                        <td>Strings</td>
+                        <td>Concatenation with +</td>
+                        <td>Template literals (` `` `)</td>
+                    </tr>
+                    <tr>
+                        <td>Destructuring</td>
+                        <td>No built-in destructuring</td>
+                        <td>{ a, b } = obj, [x, y] = arr</td>
+                    </tr>
+                    <tr>
+                        <td>Modules</td>
+                        <td>No native modules</td>
+                        <td>import, export</td>
+                    </tr>
+                    <tr>
+                        <td>Asynchronous Operations</td>
+                        <td>Callbacks</td>
+                        <td>Promise</td>
+                    </tr>
+                    <tr>
+                        <td>Parameters</td>
+                        <td>No default values</td>
+                        <td>Default parameters, Rest and Spread operators</td>
+                    </tr>
+                    <tr>
+                        <td>Object Literals</td>
+                        <td>No shorthand syntax</td>
+                        <td>Shorthand properties and methods</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="outline">
+            <h3>Fundamental Outline Course</h3>
+            <ol>
+                <li>Console</li>
+                <li>Comment</li>
+                <li>Variable</li>
+                <li>Datatype</li>
+                <li>Type Conversion</li>
+                <li>Operator</li>
+                <li>Type Coercion</li>
+                <li>String</li>
+                <li>Number</li>
+                <li>Math Object</li>
+                <li>Date Time</li>
+                <li>Array</li>
+                <li>Object</li>
+                <li>JSON</li>
+                <li>Function</li>
+                <li>Truthy & Falsy</li>
+                <li>Control Flow</li>
+                <li>Iteration Loop</li>
+                <li>DOM</li>
+                <li>Event</li>
+                <li>OOP</li>
+            </ol>
+            <br>
+            <h3>Advanced Outline Course</h3>
+            <ol>
+                <li>Scope</li>
+                <li>Hoisting</li>
+                <li>Function declaration and expression</li>
+                <li>Arrow Function</li>
+                <li>Higher order functions and Callbacks</li>
+                <li>IIFE(Immediately invoked function expression)</li>
+                <li>Timers</li>
+                <li>Promises and Asyn/Await</li>
+                <li>Fetch API and AJAX</li>
+                <li>Closures and Scope</li>
+                <li>`this` keyword</li>
+                <li>Error Handling</li>
+                <li>Common JS Vs Module</li>
+                <li>Intersection Observer</li>
+                <li>Script Loading</li>
+                <li>Cookies, Session Storage, Local Storage</li>
+            </ol>
+        </div>
+        <br>
+        <div class="disclaimer">
+            <p>အခြား JavaScript နဲ့ ပတ်သတ်တဲ့ အပိုင်းတွေ ကျန်ရှိနေသေးနိုင်တယ်။ ဒါတွေသိသွားရင် ကျန်တာတွေကိုလဲ ကိုယ့်ပါသာ
+                လေ့လာသွားနိုင်မယ်လို့ မျှော်လင့်ပါတယ်။ &#9996;</p>
+
+        </div>
+        <div class="reference">
+            <h3>References</h3>
+            <ul>
+                <li><a href="https://eloquentjavascript.net/">Eloquent JavaScript</a></li>
+                <li><a href="https://javascript.info/">JavaScript Info</a></li>
+                <li><a
+                        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling">MDN
+                        JavaScript</a></li>
+                <li><a href="https://github.com/getify/You-Dont-Know-JS">You Don't know JS</a></li>
+            </ul>
+        </div>
+    </div>
+    <script src=""></script>
 </body>
 
 </html>

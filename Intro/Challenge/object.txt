@@ -61,7 +61,7 @@ library[0].status.read = true;
 library[1].status.read = true;
 library[3].status.read = true;
 
- Step 4 Solution
+ Step 3 Solution
 
 const { title: firstBook } = library[0];
 console.log(firstBook);

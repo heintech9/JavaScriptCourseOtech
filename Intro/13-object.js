@@ -103,8 +103,9 @@ x = Object.entries(todo);
 
 // Check if object has a property
 x = todo.hasOwnProperty('age');
-
 // console.log(x);
+
+
 // Setting object properties with the same name as a variable
 const firstName = 'John';
 const lastName = 'Doe';
@@ -128,17 +129,17 @@ const todo1 = {
   },
 };
 
-const {
-  id: todoId, // rename id to todoId
-  title,
-  user: { name }, // destructuring multiple levels
-} = todo;
+// const todoId = todo1.id;
+// const title = todo1.title;
+// const user = todo1.user.name;
 
-console.log(todoId);
+// const {id:todoId,title: todoTitle, user: { name:todoName }} = todo1;
+
+// console.log(todoTitle);
 
 // Destructuring arrays & using the rest/spread operator
 const numbers = [23, 67, 33, 49, 52];
 
 const [first, second, ...rest] = numbers;
 
-console.log(first, second, rest);
+// console.log(first, second, rest);

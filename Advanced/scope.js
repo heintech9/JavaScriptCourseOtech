@@ -1,15 +1,10 @@
-// 'window' is globally scoped
-// alert('Hello');
-// console.log(innerWidth);
-
 // Global scope variable
-// const x = 100;
+const x = 100;
 
 // console.log(x, 'in global');
 
 function run() {
   // Access global vars in functions
-  console.log(window.innerHeight);
   console.log(x, 'in function');
 }
 
@@ -17,7 +12,7 @@ run();
 
 // Access global vars in blocks
 if (true) {
-  // console.log(x, 'in block');
+  console.log(x, 'in block');
 }
 
 function add() {
@@ -44,7 +39,7 @@ if (true) {
 // console.log(y); // ReferenceError: y is not defined
 
 // A loop is a block
-for (let i = 0; i <= 10; i++) {
+for (var i = 0; i <= 10; i++) {
   console.log(i);
 }
 
@@ -69,33 +64,15 @@ run();
 
 // console.log(d);
 
-const foo = 1;
-var bar = 2; // Put on the window object
-
-console.log('first')
-
 function first() {
   const x = 100;
 
   function second() {
     const y = 200;
-    // console.log(x + y);
+    console.log(x + y);
   }
-
-  console.log(y);
 
   second();
 }
 
 first();
-
-// if (true) {
-//   const x = 100;
-
-//   if (x === 100) {
-//     const y = 200;
-//     console.log(x + y);
-//   }
-
-//   console.log(y);
-// }

@@ -7,6 +7,8 @@ const mixed = [12, 'Hello', true, null];
 // Array Constructor
 const fruits = new Array('apple', 'grape', 'orange');
 
+console.log(fruits, typeof fruits)
+
 // Get value by index
 x = numbers[0];
 
