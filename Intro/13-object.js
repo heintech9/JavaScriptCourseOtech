@@ -136,10 +136,3 @@ const todo1 = {
 // const {id:todoId,title: todoTitle, user: { name:todoName }} = todo1;
 
 // console.log(todoTitle);
-
-// Destructuring arrays & using the rest/spread operator
-const numbers = [23, 67, 33, 49, 52];
-
-const [first, second, ...rest] = numbers;
-
-// console.log(first, second, rest);

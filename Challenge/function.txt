@@ -1,0 +1,97 @@
+Challenge 1:
+Write a function `getCelsius` that converts a temperature from Fahrenheit to Celsius. 
+The function should take a single argument, `f`, representing the temperature in Fahrenheit, and return the temperature in Celsius. 
+Use the formula `C = (F - 32) * 5/9` to perform the conversion. 
+Demonstrate the function by converting 35°F to Celsius and logging the result to the console in the format: 
+Output:
+`The temp is X °C`.
+
+Degree Sign Code: \xB0
+
+Challenge 2:
+- Write a function `minMax` that takes an array of numbers as an argument and returns an object containing the minimum and maximum values from the array. 
+- Use the function `Math.min` and `Math.max` along with the spread operator to find the values. 
+- Demonstrate the function by finding the minimum and maximum values in the array `[2, 31, 4, 5, 6]` and logging the result to the console.
+
+Challenge 3:
+- Create an immediately invoked function expression (IIFE) that calculates the area of a rectangle. 
+- The IIFE should take two arguments, `length` and `width`, representing the dimensions of the rectangle. 
+- Inside the IIFE, calculate the area and log a message to the console in the format: 
+
+Output:
+"The area of a rectangle with a length of X and a width of Y is Z."
+
+- Demonstrate the IIFE by calculating the area of a rectangle with a length of 20 and a width of 10.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Challenge 1 Solution
+function getCelsius(f) {
+  const celsius = ((f - 32) * 5) / 9;
+  return celsius;
+}
+
+const getCelsius = (f) => ((f - 32) * 5) / 9;
+
+console.log(`The temp is ${getCelsius(35)} \xB0C `);
+
+// Challenge 2 Solution
+function minMax(arr) {
+  const min = Math.min(...arr);
+  const max = Math.max(...arr);
+
+  return {
+    min,
+    max,
+  };
+}
+
+console.log(minMax([2, 31, 4, 5, 6]));
+
+// Challenge 3 Solution
+
+((length, width) => {
+  const area = length * width;
+
+  const output = `The area of a rectangle with a length of ${length} and a width of ${width} is ${area}.`;
+
+  console.log(output);
+})(20, 10);

@@ -128,3 +128,10 @@ const c = 3;
 x = Array.of(a, b, c);
 
 console.log(x);
+
+// Destructuring arrays & using the rest/spread operator
+const numbers2 = [23, 67, 33, 49, 52];
+
+const [first, second, ...rest] = numbers2;
+
+console.log(first, second, rest);
