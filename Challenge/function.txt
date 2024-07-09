@@ -23,46 +23,6 @@ Output:
 
 - Demonstrate the IIFE by calculating the area of a rectangle with a length of 20 and a width of 10.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Challenge 1 Solution
 function getCelsius(f) {
   const celsius = ((f - 32) * 5) / 9;
