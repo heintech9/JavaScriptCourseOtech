@@ -63,19 +63,19 @@
 
 //   insertElement()
 
-function insertBeforeItem() {
-    const ul = document.querySelector('ul');
+// function insertBeforeItem() {
+//     const ul = document.querySelector('ul');
   
-    const li = document.createElement('li');
-    li.textContent = 'hello';
+//     const li = document.createElement('li');
+//     li.textContent = 'hello';
   
-    const thirdItem = document.querySelector('li:nth-child(3)');
+//     const thirdItem = document.querySelector('li:nth-child(3)');
   
-    ul.insertBefore(li, thirdItem);
-  }
+//     ul.insertBefore(li, thirdItem);
+//   }
 
-  insertBeforeItem();
+//   insertBeforeItem();
 
-  function insertAfter(newEl, existingEl) {
-    existingEl.parentElement.insertBefore(newEl, existingEl.nextSibling);
-  }x
+//   function insertAfter(newEl, existingEl) {
+//     existingEl.parentElement.insertBefore(newEl, existingEl.nextSibling);
+//   }
