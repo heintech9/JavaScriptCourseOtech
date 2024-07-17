@@ -216,3 +216,117 @@ priorityInput.addEventListener('change', onInput);
 checkbox.addEventListener('input', onChecked);
 itemInput.addEventListener('focus', onFocus);
 itemInput.addEventListener('blur', onBlur);
+
+const form = document.getElementById('item-form');
+
+function onSubmit(e) {
+  e.preventDefault();
+
+  // Get value with .value
+  const item = document.getElementById('item-input').value;
+  const priority = document.getElementById('priority-input').value;
+
+  if (item === '' || priority === '0') {
+    alert('Please fill in all fields');
+    return;
+  }
+
+  console.log(item, priority);
+}
+
+// Using the FormData Object
+function onSubmit2(e) {
+  e.preventDefault();
+
+  const formData = new FormData(form);
+
+  // Get individual items
+  const item = formData.get('item');
+  const priority = formData.get('priority');
+
+  console.log(item, priority);
+
+  // Get al entried as an Iterator
+  const entries = formData.entries();
+  console.log(entries);
+
+  // Loop through entries
+  for (let entry of entries) {
+    console.log(entry[1]);
+  }
+}
+
+form.addEventListener('submit', onSubmit2);
+
+/* The standard DOM Events describes 3 phases of event propagation:
+Capturing phase – the event goes down to the element.
+Target phase – the event reached the target element.
+Bubbling phase – the event bubbles up from the element.
+*/
+
+const button = document.querySelector('form button');
+const div = document.querySelector('form div:nth-child(2)');
+// const form = document.querySelector('form');
+
+button.addEventListener('click', (e) => {
+  alert('Button was clicked');
+  e.stopPropagation();
+});
+
+div.addEventListener('click', () => {
+  alert('Div was clicked');
+});
+
+form.addEventListener('click', () => {
+  alert('Form was clicked');
+});
+
+document.body.addEventListener('click', () => {
+  alert('Body was clicked');
+});
+
+// Browser Events
+// On Page Load
+// window.onload = function () {
+//   document.querySelector('h1').textContent = 'Hello World';
+// };
+
+window.addEventListener('load', () => console.log('Page Loaded'));
+
+// On DOM Load
+window.addEventListener('DOMContentLoaded', () => console.log('DOM Loaded'));
+
+console.log('Run me');
+
+// Resize Event
+window.addEventListener('resize', () => {
+  document.querySelector(
+    'h1'
+  ).innerText = `Resized to ${window.innerWidth} x ${window.innerHeight}`;
+});
+
+// Scroll Event
+window.addEventListener('scroll', () => {
+  console.log(`Scrolled: ${window.scrollX} x ${window.scrollY}`);
+
+  if (window.scrollY > 70) {
+    document.body.style.backgroundColor = 'black';
+    document.body.style.color = 'white';
+  } else {
+    document.body.style.backgroundColor = 'white';
+    document.body.style.color = 'black';
+  }
+});
+
+// Focus & Blur Events
+window.addEventListener('focus', () => {
+  document.querySelectorAll('p').forEach((p) => {
+    p.style.color = 'blue';
+  });
+});
+
+window.addEventListener('blur', () => {
+  document.querySelectorAll('p').forEach((p) => {
+    p.style.color = 'black';
+  });
+});

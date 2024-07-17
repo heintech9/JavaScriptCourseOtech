@@ -1,0 +1,36 @@
+ Task: Color Changer
+
+Objective: Create a webpage where clicking on colored boxes changes their colors randomly. This will practice event handling and DOM manipulation in JavaScript.
+
+Instructions:
+
+1. Set Up HTML:
+   - Create an HTML file with several `div` elements as colored boxes.
+   - Give each `div` a class and an initial background color.
+
+2. Add CSS:
+   - Style the `div` elements to be 100px by 100px and displayed inline.
+   - Add margin around each box for spacing.
+
+3. JavaScript Functionality:
+   - Write a function to generate random colors.
+   - Add event listeners to each `div` to change its color when clicked.
+
+4. Enhance with JavaScript:
+   - Add a button to change the colors of all boxes to random colors when clicked.
+
+Questions for Students:
+
+1. HTML Structure:
+   - How do you create and style multiple `div` elements?
+
+2. CSS Styling:
+   - How do you set the size and display properties for the `div` elements?
+
+3. JavaScript Functions:
+   - How do you generate a random color?
+   - How do you add event listeners to the `div` elements?
+
+4. Event Handling:
+   - What happens when a `div` is clicked?
+   - How do you change all box colors with a button click?
